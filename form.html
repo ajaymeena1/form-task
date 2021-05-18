@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="form.css"> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>form</title>
+   
+
+  <style>
+    td, th{  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+.sp{
+    color: red;
+  }
+  </style>
+  </head>
+  <body>
+    <form id="aj">
+      <div class="container">
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label for="">Name</label>
+          <input type="text"  class="form-control" id="name" placeholder="name" required>
+        </div>
+        <div class="form-group col-md-8">
+          <label for="">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Email" required>
+        </div>
+        <div class="form-group col-md-5">
+          <label for="inputPassword4">contact no.</label>
+          <input type="tel" class="form-control" id="contact" placeholder="enter 10 digits" pattern="[0-9]{10}" required><p><span id="f" class="sp"></span></p>
+        </div>
+      </div>
+      <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="">house no.</label>
+        <input type="text" class="form-control" id="house" placeholder="123/3"  required>
+      </div>
+    </div>
+      <div class="form-group">
+        <label for="">Street 1</label>
+        <input type="text" class="form-control" id="street" placeholder="address 1" required>
+      </div>
+      <div class="form-group">
+        <label for="">Street 2</label>
+        <input type="text" class="form-control" id="street2" placeholder="address 2">
+      </div>
+      <div class="form-row">
+        
+        <div class="form-group col-md-4">
+          <label for="">State</label>
+          <select class="form-control" id="state" onchange="fun()">
+            <option selected>Choose...</option>
+            <option>MP</option>
+            <option>UP</option>
+            <option>Maharashtra</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="">City</label>
+          <select id="city" onchange="fun()" class="form-control">
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="">Pincode</label>
+          <input type="text" class="form-control" id="pin" placeholder="enter 6 digit only" required><span class="sp" id="s"></span>
+        </div>
+      </div>
+     
+      <button type="button" class="btn btn-primary" id="save">submit</button>
+    </div>
+    </form>
+    <div class="container">
+      <table class="" id="myTable">
+        <thead>
+        <tr class="">    
+        <th nowrap>Name</th>      
+        <th nowrap>Email</th>
+        <th nowrap>contact no.</th>
+        <th nowrap>house no.</th>
+        <th nowrap>street 1</th>
+        <th nowrap>street 2</th>
+        <th nowrap>state</th>
+        <th nowrap>city</th>
+        <th nowrap>pincode</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        </table>
+    </div>
+    
+<script type="text/javascript" src="form.js"></script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
